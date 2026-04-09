@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1; /* Indigo */
+  --color-primary-foreground: #ffffff;
+  --color-background: #0f172a; /* Slate 900 for modern dark */
+  --color-foreground: #f8fafc;
+  --color-card: #1e293b;
+  --color-border: #334155;
+}
+
+:root {
+  color-scheme: dark light;
+}
+
+@layer base {
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.foreground');
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Futuristic background animation */
+.bg-gradient-animate {
+  background: linear-gradient(120deg, #1e1b4b, #312e81, #1e1b4b);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

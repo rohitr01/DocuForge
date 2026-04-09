@@ -1,0 +1,21 @@
+
+> app@0.0.0 build
+> tsc -b && vite build
+
+src/pages/ImageBlur.tsx(1,41): error TS6133: 'useEffect' is declared but its value is never read.
+src/pages/ImageBlur.tsx(15,9): error TS6133: 'canvasRef' is declared but its value is never read.
+src/pages/ImageCompressForm.tsx(19,29): error TS2503: Cannot find namespace 'NodeJS'.
+src/pages/ImageCropUtility.tsx(140,32): error TS6133: 'e' is declared but its value is never read.
+src/pages/ImageRemoveBg.tsx(1,33): error TS6133: 'useRef' is declared but its value is never read.
+src/pages/ImageRotateHelper.tsx(2,46): error TS6133: 'ArrowRight' is declared but its value is never read.
+src/pages/ImageUpscale.tsx(2,28): error TS6133: 'Expand' is declared but its value is never read.
+src/pages/PassportPhotoMaker.tsx(2,28): error TS6133: 'UserCircle' is declared but its value is never read.
+src/pages/PassportPhotoMaker.tsx(9,7): error TS6133: 'DPI' is declared but its value is never read.
+src/pages/PDFEdit.tsx(1,33): error TS6133: 'useRef' is declared but its value is never read.
+src/pages/PDFEdit.tsx(4,28): error TS6133: 'Edit3' is declared but its value is never read.
+src/pages/PDFMerge.tsx(4,28): error TS6133: 'CopyPlus' is declared but its value is never read.
+src/pages/PDFSign.tsx(1,41): error TS6133: 'useEffect' is declared but its value is never read.
+src/pages/PDFSign.tsx(20,10): error TS6133: 'pdfNativeDimensions' is declared but its value is never read.
+src/pages/PDFToImage.tsx(3,18): error TS6133: 'Download' is declared but its value is never read.
+src/pages/PDFUnlock.tsx(35,10): error TS2353: Object literal may only specify known properties, and 'password' does not exist in type 'LoadOptions'.
+src/pages/SignatureGen.tsx(3,1): error TS6133: 'cn' is declared but its value is never read.
