@@ -9,7 +9,7 @@ export default function PDFMerge() {
   const [files, setFiles] = useState<File[]>([]);
   const [mergedUrl, setMergedUrl] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [fileName, setFileName] = useState('docuforge_merged.pdf');
+  const [fileName, setFileName] = useState('filedocs_merged.pdf');
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     setFiles((prev) => [...prev, ...acceptedFiles]);

@@ -38,7 +38,7 @@ export default function PDFUnlock() {
       pdfDoc.setTitle('Unlocked Document');
       pdfDoc.setAuthor('User');
       pdfDoc.setSubject(''); 
-      pdfDoc.setCreator('DocuForge Custom Crypto');
+      pdfDoc.setCreator('FileDocs Custom Crypto');
       pdfDoc.setProducer('Decrypted Engine');
 
       const newPdfBytes = await pdfDoc.save(); 

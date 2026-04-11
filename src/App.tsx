@@ -72,7 +72,7 @@ function App() {
             <div className="bg-indigo-500 p-1.5 rounded-lg group-hover:scale-105 transition-transform">
               <Layers className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold tracking-tight text-white">Docu<span className="text-indigo-400">Forge</span></span>
+            <span className="text-xl font-bold tracking-tight text-white">File<span className="text-indigo-400">Docs</span></span>
           </Link>
           <nav className="hidden md:flex gap-8 text-sm font-medium h-full">
             {/* PDF Dropdown */}
@@ -165,7 +165,7 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-white/10 bg-black/20 text-slate-400 py-8">
         <div className="container mx-auto px-4 text-center text-sm">
-          <p>© 2026 DocuForge. 100% Client-Side Processing for ultimate privacy.</p>
+          <p>© 2026 FileDocs. 100% Client-Side Processing for ultimate privacy.</p>
         </div>
       </footer>
     </div>

@@ -82,7 +82,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-lg text-slate-300 leading-relaxed">
-          DocuForge runs directly in your browser. No limits, zero uploads, instant processing, and absolute privacy. Tools powered by WebAssembly.
+          FileDocs runs directly in your browser. No limits, zero uploads, instant processing, and absolute privacy. Tools powered by WebAssembly.
         </p>
 
         {/* Search Bar */}

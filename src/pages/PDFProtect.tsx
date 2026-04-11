@@ -36,7 +36,7 @@ export default function PDFProtect() {
       pdfDoc.setTitle('Encrypted Document');
       pdfDoc.setAuthor('Secure Node');
       pdfDoc.setSubject(btoa(password)); // Base64 basic encode to pretend hash
-      pdfDoc.setCreator('DocuForge Custom Crypto');
+      pdfDoc.setCreator('FileDocs Custom Crypto');
       pdfDoc.setProducer('AES-256 Mock Engine');
 
       const newPdfBytes = await pdfDoc.save({ useObjectStreams: false }); 
