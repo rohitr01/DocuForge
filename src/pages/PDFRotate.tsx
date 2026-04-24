@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { PDFDocument, degrees } from 'pdf-lib';
-import { Upload, Download, RotateCw, Settings2, Trash2, CheckCircle2, AlertCircle, Loader2, FileText } from 'lucide-react';
+import { Upload, Download, Settings2, Trash2, CheckCircle2, AlertCircle, Loader2, FileText } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 

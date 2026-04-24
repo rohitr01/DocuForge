@@ -1,6 +1,6 @@
-import { useState, useCallback, useRef } from 'react';
+import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { Upload, Download, Settings2, Trash2, CheckCircle2, AlertCircle, Loader2, Image as ImageIcon, Move, Type, ArrowRight } from 'lucide-react';
+import { Upload, Download, Settings2, Trash2, CheckCircle2, AlertCircle, Loader2, Image as ImageIcon, Move, ArrowRight } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -25,7 +25,7 @@ export default function ImageResize() {
   const [height, setHeight] = useState<number | ''>(500);
   const [unit, setUnit] = useState<Unit>('px');
   const [dpi, setDpi] = useState(300);
-  const [maintainAspect, setMaintainAspect] = useState(true);
+
   const [showOverlay, setShowOverlay] = useState(false);
   const [overlayName, setOverlayName] = useState('');
   const [overlayDOB, setOverlayDOB] = useState('');

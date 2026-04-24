@@ -6,7 +6,7 @@ export default function OCRExtractor() {
   const [image, setImage] = useState<string | null>(null);
   const [text, setText] = useState<string>('');
   const [isProcessing, setIsProcessing] = useState(false);
-  const [progress, setProgress] = useState(0);
+
   const [copySuccess, setCopySuccess] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -25,7 +25,7 @@ export default function OCRExtractor() {
   const processImage = async () => {
     if (!image) return;
     setIsProcessing(true);
-    setProgress(0);
+
 
     try {
       const worker = await createWorker('eng');

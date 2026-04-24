@@ -1,10 +1,10 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  FileText, Image as ImageIcon, FormInput, ArrowRight, Minimize,
+  FileText, Image as ImageIcon, ArrowRight, Minimize,
   SplitSquareHorizontal, Layers, FileImage, ShieldCheck, Crop,
   RotateCw, Expand, UserCircle, PenTool, Hash, Edit3,
-  Lock, Unlock, BringToFront, Scissors, Search, Layout, Type, Eraser, Camera
+  BringToFront, Scissors, Search, Layout, Type, Eraser, Camera
 } from 'lucide-react';
 
 const TOOLS = [
@@ -20,8 +20,6 @@ const TOOLS = [
       { id: "pdf-to-image", name: "PDF to Image", desc: "Extract high-quality JPGs from your PDF.", icon: FileImage, path: "/pdf/to-image", color: "text-red-400", bg: "bg-red-400/10" },
       { id: "pdf-sign", name: "Sign PDF", desc: "Drag, drop, and place your generated signature on pages.", icon: PenTool, path: "/pdf/sign", color: "text-red-400", bg: "bg-red-400/10" },
       { id: "pdf-organize", name: "Organize PDF", desc: "Re-order pages visually via drag-and-drop.", icon: BringToFront, path: "/pdf/organize", color: "text-red-400", bg: "bg-red-400/10" },
-      { id: "pdf-unlock", name: "Unlock PDF", desc: "Remove passwords from secure PDFs.", icon: Unlock, path: "/pdf/unlock", color: "text-red-400", bg: "bg-red-400/10" },
-      { id: "pdf-protect", name: "Protect PDF", desc: "Add 256-bit encryption instantly.", icon: Lock, path: "/pdf/protect", color: "text-red-400", bg: "bg-red-400/10" },
       { id: "pdf-page-number", name: "Add Page Number", desc: "Batch inject page numbering vectors.", icon: Hash, path: "/pdf/page-number", color: "text-red-400", bg: "bg-red-400/10" },
       { id: "pdf-edit", name: "Edit PDF", desc: "Full object-tree modification and editing.", icon: Edit3, path: "/pdf/edit", color: "text-red-400", bg: "bg-red-400/10" },
       { id: "pdf-crop", name: "Crop PDF", desc: "Define visual bounding boxes.", icon: Crop, path: "/pdf/crop", color: "text-red-400", bg: "bg-red-400/10" },

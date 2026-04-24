@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from 'react';
-import { Camera, RefreshCcw, Download, Scissors, Maximize, AlertCircle } from 'lucide-react';
+import { Camera, RefreshCcw, Download, Maximize, AlertCircle } from 'lucide-react';
 
 export default function DocumentScanner() {
   const [stream, setStream] = useState<MediaStream | null>(null);

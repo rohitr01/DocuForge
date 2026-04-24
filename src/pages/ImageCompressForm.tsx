@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import imageCompression from 'browser-image-compression';
 import { Upload, Download, Image as ImageIcon, Settings2, Trash2, CheckCircle2, AlertCircle, Loader2, ArrowRight } from 'lucide-react';

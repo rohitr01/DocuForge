@@ -33,8 +33,6 @@ import PDFCrop from './pages/PDFCrop'
 // Final Advanced Mappings
 import ImageUpscale from './pages/ImageUpscale'
 import PDFToImage from './pages/PDFToImage'
-import PDFUnlock from './pages/PDFUnlock'
-import PDFProtect from './pages/PDFProtect'
 import PDFEdit from './pages/PDFEdit'
 import ImageRemoveBg from './pages/ImageRemoveBg'
 import OCRExtractor from './pages/OCRExtractor'
@@ -162,8 +160,6 @@ function App() {
           <Route path="/pdf/organize" element={<PDFOrganize />} />
           <Route path="/pdf/crop" element={<PDFCrop />} />
           <Route path="/pdf/to-image" element={<PDFToImage />} />
-          <Route path="/pdf/unlock" element={<PDFUnlock />} />
-          <Route path="/pdf/protect" element={<PDFProtect />} />
           <Route path="/pdf/edit" element={<PDFEdit />} />
           
           <Route path="/form-helper" element={<FormHelper />} />

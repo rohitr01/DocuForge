@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { PDFDocument, PageSizes } from 'pdf-lib';
-import { Upload, Download, FileImage, Trash2, ArrowUp, ArrowDown, Move, Settings, Eye, RefreshCcw, CheckCircle2 } from 'lucide-react';
+import { Upload, Download, FileImage, Trash2, ArrowUp, ArrowDown, Settings, Eye, RefreshCcw, CheckCircle2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -130,7 +130,7 @@ export default function ImageToPDF() {
       }
 
       const pdfBytes = await pdfDoc.save();
-      const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+      const blob = new Blob([pdfBytes.buffer as ArrayBuffer], { type: 'application/pdf' });
       if (pdfUrl) URL.revokeObjectURL(pdfUrl);
       const url = URL.createObjectURL(blob);
       setPdfUrl(url);
@@ -197,7 +197,7 @@ export default function ImageToPDF() {
             <div className="text-center space-y-2">
               <p className="text-lg font-bold text-slate-200">Upload Multiple Files</p>
               <button 
-                onClick={open}
+                onClick={(e) => { e.stopPropagation(); open(); }}
                 className="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-bold shadow-lg shadow-indigo-600/20 transition-all active:scale-95"
               >
                 Browse Images

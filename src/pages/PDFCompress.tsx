@@ -35,8 +35,7 @@ export default function PDFCompress() {
   const [items, setItems] = useState<CompressItem[]>([]);
   const [isProcessingAll, setIsProcessingAll] = useState(false);
   const [compressionMode, setCompressionMode] = useState<CompressMode>('standard');
-  const [stripAnnotations, setStripAnnotations] = useState(false);
-  const [stripBookmarks, setStripBookmarks] = useState(false);
+
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     const newItems: CompressItem[] = acceptedFiles.map(file => ({
@@ -92,7 +91,7 @@ export default function PDFCompress() {
       if (compressionMode === 'basic') { saveOpts.useObjectStreams = true; }
 
       const bytes = await out.save(saveOpts);
-      const blob = new Blob([bytes], { type: 'application/pdf' });
+      const blob = new Blob([bytes.buffer as ArrayBuffer], { type: 'application/pdf' });
       const url = URL.createObjectURL(blob);
       const newSize = bytes.byteLength;
       const savedPct = Math.max(0, Math.round((1 - newSize / item.oldSize) * 100));

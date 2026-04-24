@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { Upload, Download, RotateCw, Trash2, CheckCircle2, AlertCircle, Loader2, ImageIcon, ArrowRight, Settings2 } from 'lucide-react';
+import { Upload, Download, Trash2, CheckCircle2, AlertCircle, Loader2, ImageIcon, ArrowRight, Settings2 } from 'lucide-react';
 import { useDropzone } from 'react-dropzone';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';

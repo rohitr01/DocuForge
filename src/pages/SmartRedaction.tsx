@@ -1,9 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
-import { ShieldAlert, Eraser, Download, MousePointer2, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
+import { ShieldAlert, Eraser, Download, MousePointer2, RotateCcw } from 'lucide-react';
 
 export default function SmartRedaction() {
   const [image, setImage] = useState<string | null>(null);
-  const [previewSize, setPreviewSize] = useState({ width: 0, height: 0 });
+
   const [blocks, setBlocks] = useState<{ x: number, y: number, w: number, h: number }[]>([]);
   const [isDrawing, setIsDrawing] = useState(false);
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
